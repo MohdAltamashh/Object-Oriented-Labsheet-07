@@ -1,0 +1,35 @@
+// File: demo/AccessDemo.java
+package demo;
+
+public class AccessDemo {
+    public String publicText = "public member";
+    protected String protectedText = "protected member";
+    String defaultText = "default/package-private member";
+    private String privateText = "private member";
+
+    public void showInsideClass() {
+        System.out.println(publicText);
+        System.out.println(protectedText);
+        System.out.println(defaultText);
+        System.out.println(privateText);
+    }
+}
+
+// File: outside/AccessTest.java
+package outside;
+
+import demo.AccessDemo;
+
+public class AccessTest extends AccessDemo {
+    public void testAccess() {
+        System.out.println(publicText);     // Accessible.
+        System.out.println(protectedText);  // Accessible through subclass inheritance.
+        // System.out.println(defaultText); // Not accessible outside package.
+        // System.out.println(privateText); // Not accessible outside declaring class.
+    }
+
+    public static void main(String[] args) {
+        AccessTest test = new AccessTest();
+        test.testAccess();
+    }
+}

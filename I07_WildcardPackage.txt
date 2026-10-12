@@ -1,0 +1,27 @@
+// File: mypackage/A.java
+package mypackage;
+public class A {
+    public void show() { System.out.println("Class A"); }
+}
+
+// File: mypackage/B.java
+package mypackage;
+public class B {
+    public void show() { System.out.println("Class B"); }
+}
+
+// File: mypackage/C.java
+package mypackage;
+public class C {
+    public void show() { System.out.println("Class C"); }
+}
+
+// File: UseWildcard.java in project root
+// import mypackage.*;
+// public class UseWildcard {
+//     public static void main(String[] args) {
+//         new A().show();
+//         new B().show();
+//         new C().show();
+//     }
+// }

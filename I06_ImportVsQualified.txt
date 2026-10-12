@@ -1,0 +1,25 @@
+// File: animals/Dog.java
+package animals;
+
+public class Dog {
+    public void bark() {
+        System.out.println("Dog barks.");
+    }
+}
+
+// File: ImportDog.java in project root
+// import animals.Dog;
+// public class ImportDog {
+//     public static void main(String[] args) {
+//         Dog obj = new Dog();
+//         obj.bark();
+//     }
+// }
+
+// File: QualifiedDog.java in project root
+// public class QualifiedDog {
+//     public static void main(String[] args) {
+//         animals.Dog obj = new animals.Dog();
+//         obj.bark();
+//     }
+// }

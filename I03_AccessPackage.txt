@@ -1,0 +1,27 @@
+// File: testpack/PublicClass.java
+package testpack;
+
+public class PublicClass {
+    public void display() {
+        System.out.println("Public class is accessible outside package.");
+    }
+}
+
+// File: testpack/DefaultClass.java
+package testpack;
+
+// No public keyword: package-private class.
+class DefaultClass {
+    void display() {
+        System.out.println("Default class is accessible only inside testpack.");
+    }
+}
+
+// File: TestAccess.java in project root
+// import testpack.PublicClass;
+// public class TestAccess {
+//     public static void main(String[] args) {
+//         new PublicClass().display(); // Allowed.
+//         // new DefaultClass();       // Compile-time error: not accessible.
+//     }
+// }

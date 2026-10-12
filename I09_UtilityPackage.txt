@@ -1,0 +1,18 @@
+// File: utils/MathUtils.java
+package utils;
+
+public class MathUtils {
+    public static int add(int a, int b) { return a + b; }
+    public static int subtract(int a, int b) { return a - b; }
+    public static int multiply(int a, int b) { return a * b; }
+}
+
+// File: UseMathUtils.java in project root
+// import utils.MathUtils;
+// public class UseMathUtils {
+//     public static void main(String[] args) {
+//         System.out.println(MathUtils.add(10, 5));
+//         System.out.println(MathUtils.subtract(10, 5));
+//         System.out.println(MathUtils.multiply(10, 5));
+//     }
+// }

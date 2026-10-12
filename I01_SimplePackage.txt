@@ -1,0 +1,17 @@
+// Save as mypack/Hello.java
+package mypack;
+
+public class Hello {
+    public void display() {
+        System.out.println("Hello from user-defined package mypack.");
+    }
+}
+
+// Save the following separate class as UseHello.java in the project root:
+// import mypack.Hello;
+// public class UseHello {
+//     public static void main(String[] args) {
+//         Hello hello = new Hello();
+//         hello.display();
+//     }
+// }
